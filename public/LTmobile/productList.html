@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>乐淘-----产品</title>
+    <link type="image/x-icon" rel="shortcut icon" href="./images/favicon.ico">
+    <!-- 1、mui的css -->
+    <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+    <!-- 2、图标css -->
+    <link rel="stylesheet" href="./lib/fontAwesome/css/font-awesome.min.css">
+    <!-- 3、自己的css -->
+    <link rel="stylesheet" href="./less/productList.css">
+</head>
+<body>
+    <header id="header">
+        <a href="#" class="fa-arrow-left back"></a>
+        <h4>商品列表</h4>
+    </header>
+
+    <main id="main">
+        <section id="searchWrap">
+            <form action="">
+                <input type="search" placeholder="搜索你喜欢的商品" id="searchId">
+                <button type="button" id="search-submitButton">搜索</button>
+            </form>
+        </section>
+        <section id="productWrap">
+            <div class="product-sorting">
+                <div class="mui-row">
+                    <div class="mui-col-xs-3">
+                        <a href="#">上架时间<i class="fa fa-angle-down"></i></a>
+                    </div>
+                    <div class="mui-col-xs-3">
+                        <a href="#">价格<i class="fa fa-angle-down"></i></a>
+                    </div>
+                    <div class="mui-col-xs-3">
+                        <a href="#">销量<i class="fa fa-angle-down"></i></a>
+                    </div>
+                    <div class="mui-col-xs-3">
+                        <a href="#">折扣<i class="fa fa-angle-down"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-content">
+                <div class="goods-con">
+                    <div class="mui-row">
+                        <div class="mui-col-xs-6">
+                            <div class="goods">
+                                <a href="#">
+                                    <img src="./images/product.jpg" alt="">
+                                    <p class="goods-title">
+                                        adidas阿迪达斯 男式 场下休闲篮球鞋S83700 
+                                    </p>
+                                    <p class="goods-price">
+                                        <span>￥560.00</span>
+                                        <del>￥888.00</del>
+                                    </p>
+                                </a>
+                                <button type="button" class="product-buy mui-btn mui-btn-primary">立即购买</button>
+                            </div>
+                        </div>
+                        <div class="mui-col-xs-6">
+                            <div class="goods">
+                                <a href="#">
+                                    <img src="./images/product.jpg" alt="">
+                                    <p class="goods-title">
+                                        adidas阿迪达斯 男式 场下休闲篮球鞋S83700 
+                                    </p>
+                                    <p class="goods-price">
+                                        <span>￥560.00</span>
+                                        <del>￥888.00</del>
+                                    </p>
+                                </a>
+                                <button type="button" class="product-buy mui-btn mui-btn-primary">立即购买</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="mui-row">
+            <div class="mui-col-xs-3">
+                <a href="./index.html" class="fa fa-home">
+                    <p>首页</p>
+                </a>
+            </div>
+            <div class="mui-col-xs-3">
+                <a href="./category.html" class="fa fa-bars">
+                    <p>分类</p>
+                </a>
+            </div>
+            <div class="mui-col-xs-3">
+                <a href="#" class="fa fa-shopping-cart">
+                    <p>购物车</p>
+                </a>
+            </div>
+            <div class="mui-col-xs-3">
+                <a href="#" class="fa fa-user">
+                    <p>会员中心</p>
+                </a>
+            </div>
+        </div>
+    </footer> 
+    
+   <!-- 引入zepto的JS文件 （操作DOM和Ajax）-->
+   <script src="./lib/zepto/zepto.min.js"></script>
+   <!-- 引入mui的JS文件 -->
+   <script src="./lib/mui/js/mui.min.js"></script>
+   <!-- 引入模板引擎JS文件 -->
+   <script src="./lib/artTemplate/template.js"></script>
+   <!-- 引入分类的JS的文件 -->
+   <script src="./js/search.js"></script>  
+</body>
+</html>

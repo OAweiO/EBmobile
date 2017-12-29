@@ -1,0 +1,35 @@
+@import 'base.less';
+
+#historyWrap{
+    padding: 0 10px;
+    >h5{
+        color: #666;
+        >i {
+            float: right;
+        }
+    }
+    >.his-content{
+        margin-top: 25px;
+        >.mui-table-view {
+           >.mui-table-view-cell{
+               font-size: 14px;
+               >a{
+                   margin: 0;
+                   display: inline-block;
+                   padding: 0;
+                   min-width: 50%;
+               }
+               >i{
+                   float: right;
+                   width: 25px;
+                   height: 25px;
+                   line-height: 25px;
+                   text-align: center;
+               }
+               &::after{
+                left: 0;
+               } 
+           }
+        }
+    }
+}
